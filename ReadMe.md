@@ -40,7 +40,7 @@ git clone https://github.com/rpng/open_vins.git
 git clone https://github.com/rpng/ov_secondary.git
 # go back to root and build
 cd ..
-catkin build -j4
+catkin build -DENABLE_ARUCO_TAGS=OFF -j4
 # run the OpenVINS system and loop node
 source devel/setup.bash
 roslaunch ov_msckf pgeneva_ros_eth.launch
