@@ -43,7 +43,7 @@ cd ..
 catkin build -DENABLE_ARUCO_TAGS=OFF -j4
 # run the OpenVINS system and loop node
 source devel/setup.bash
-roslaunch ov_msckf pgeneva_ros_eth.launch
+roslaunch ov_msckf subscribe.launch
 roslaunch loop_fusion posegraph.launch
 ```
 
